@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "issue_keyboard_system (debug)",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "issue_keyboard_system (debug WASM)",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--wasm"
+            ]
+        },
+        {
+            "name": "issue_keyboard_system (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "issue_keyboard_system (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
