@@ -87,7 +87,7 @@ class _KeyboardListenerDemoState extends State<KeyboardListenerDemo> {
           title: const Text('Keyboard Listeners Comparison $buildType'),
           actions: [
             IconButton(
-              icon: const Icon(Icons.cleaning_services),
+              icon: const Icon(Icons.delete),
               onPressed: _clearEvents,
               tooltip: 'Clear all events',
             ),
