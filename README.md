@@ -17,7 +17,7 @@ When making games, having correct n-key rollover function and n-key release sequ
 
 We kindly ask if you can hold the removal of the deprecated `RawKeyboardListener` and its related APIs, until this issue is resolved and its fix has landed in the Flutter stable channel.
 
-The  `RawKeyboardListener` and its related APIs are scheduled for removal here https://github.com/flutter/flutter/issues/136419 by @gspencergoog.
+The  `RawKeyboardListener` and its related APIs are scheduled for removal here https://github.com/flutter/flutter/issues/136419 by gspencergoog.
 
 
 ## Expected behaviour
@@ -60,7 +60,7 @@ This is CORRECT and **expected** behaviour.
 1. Press and hold `[1]` then, press and hold `[2]` then press and hold `[3]`.
 2. Release `[3]`, keep holding `[2]` and `[1]`, the `KeyUpEvent` for `[2]` is triggered shortly after, despite `[2]` still being pressed.
 3. Release `[2]`, keep holding `[1]`, the actual `KeyUpEvent` for `[2]` is not triggered.
-4. Release `[1]`, the `KeyUpEvent` for `1` is not triggered.
+4. Release `[1]`, the `KeyUpEvent` for `[1]` is not triggered.
 
 This is incorrect and **not expected** behaviour when using the `KeyboardListener` and related APIs on WEB builds.
 
