@@ -44,6 +44,8 @@ This is CORRECT and **expected** behaviour.
 
 This is demonstrated in the video recording below:
 
+https://github.com/user-attachments/assets/824de75c-beb7-4070-a555-ba03271fa019
+
 ## Actual behavior
 
 When pressing multiple keys in sequence and releasing them in reverse order, the `KeyUpEvent` is not triggered for each key in the correct order on WEB builds. The same incorrect result is present in both JS and WASM builds. The previous key that were pressed are triggered automatically when last key is released, slightly after it, or not at all.
@@ -65,6 +67,11 @@ This is CORRECT and **expected** behaviour.
 This is incorrect and **not expected** behaviour when using the `KeyboardListener` and related APIs on WEB builds.
 
 This is demonstrated in the video recording below:
+
+
+
+https://github.com/user-attachments/assets/b6c0aded-1b34-4c41-b0f5-1ffe38687c42
+
 
 
 ## Code sample
