@@ -44,7 +44,7 @@ This is CORRECT and **expected** behaviour.
 3. Release `[2]`, keep holding `[1]`, the `KeyUpEvent` for `[2]` is triggered.
 4. Release `[1]`, the `KeyUpEvent` for `[1]` is triggered.
 
-This is CORRECT and **expected** behaviour.
+This is correct and **expected** behavior.
 
 This is demonstrated in the video recording below:
 
@@ -60,15 +60,15 @@ When pressing multiple keys in sequence and releasing them in reverse order, the
 3. Release `[2]`, keep holding `[1]`, the `RawKeyUpEvent` for `[2]` is triggered.
 4. Release `[1]`, the `RawKeyUpEvent` for `[1]` is triggered.
 
-This is CORRECT and **expected** behaviour.
+This is correct and **expected** behaviour.
 
 **Using the VM build with `KeyboardListener` or `Focus.onKeyEvent` APIs**
 1. Press and hold `[1]` then, press and hold `[2]` then press and hold `[3]`.
-2. Release `[3]`, keep holding `[2]` and `[1]`, the `KeyUpEvent` for `[2]` is triggered shortly after, despite `[2]` still being pressed.
-3. Release `[2]`, keep holding `[1]`, the actual `KeyUpEvent` for `[2]` is not triggered.
-4. Release `[1]`, the `KeyUpEvent` for `[1]` is not triggered.
+2. Release `[3]`, keep holding `[2]` and `[1]`, the `KeyUpEvent` for `[2]` is **triggered shortly after, despite `[2]` still being pressed**.
+3. Release `[2]`, keep holding `[1]`, the **actual `KeyUpEvent` for `[2]` is not triggered**.
+4. Release `[1]`, the **`KeyUpEvent` for `[1]` is not triggered**.
 
-This is incorrect and **not expected** behaviour when using the `KeyboardListener` and related APIs on WEB builds.
+This is **incorrect** and **not expected** behavior when using the `KeyboardListener` and related APIs on WEB builds.
 
 This is demonstrated in the video recording below:
 
