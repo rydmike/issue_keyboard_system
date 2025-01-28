@@ -1,3 +1,7 @@
+# Flutter issue
+
+This is now reported in the Flutter repo here: https://github.com/flutter/flutter/issues/162305
+
 # [BUG] [WEB] `KeyboardListener`'s and `Focus.onKeyEvent`'s `KeyUpEvent` do not work correctly in JS and WASM builds
 
 The `KeyboardListener` and `Focus.onKeyEvent` that replace `RawKeyboardListener` and `Focus.onKey` have a bug in triggering the `KeyUpEvent` correctly in the JS and WASM builds. The `KeyUpEvent` is not triggered when a key is released when pressing multiple keys in sequence and releasing them in reverse order. This bug is not present in VM builds.
